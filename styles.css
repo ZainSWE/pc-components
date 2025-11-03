@@ -1,127 +1,160 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bg-dark: #191919;
+  --bg-card: #101010;
+  --text: #f0f0f0;
+  --accent-1: red;
+  --accent-2: rgb(255, 0, 208);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
 body {
-    background-color: rgb(25, 25, 25);
-    color: rgb(240, 240, 240);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(180, 180, 180);
-}
-
-a:active {
-    color: rgb(180, 180, 180);
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  font-size: 24px;
-  padding: 1rem;
-  gap: 1rem;
-  width: 100%;
-  background-color: black;
-}
-
-header {
+  background: var(--bg-dark);
+  color: var(--text);
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Navigation --- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: black;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a:active {
+  color: #b4b4b4;
+}
+
+/* --- Header --- */
+header {
+  display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  background-image: linear-gradient(45deg, red, rgb(255, 0, 208));
-  font-size: 36px;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(45deg, var(--accent-1), var(--accent-2));
 }
 
 header h1 {
-  margin: 0;
-  padding: 4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.about p {
-  width: 50rem;
-  padding: 1rem;
-}
-
+/* --- About Section --- */
+.about,
 .parts {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   text-align: left;
-  max-width: 100%;
-  margin: 0;
-  padding: 4rem;
+  width: 100%;
+  padding: 2rem 1rem;
+  gap: 1rem;
 }
 
+.about p {
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* --- Article Section --- */
 article {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  max-width: 100%;
-  background-color: rgb(30, 30, 30);
+  background: rgb(30, 30, 30);
+  padding: 2rem 1rem;
 }
 
 article ul {
   display: flex;
-  justify-content: center;
-  text-decoration: none;
-  list-style-type: none;
-  gap: 1rem;
-  width: 100rem;
   flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1200px;
 }
 
 article li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 20rem;
-  background-color: rgb(16, 16, 16);
-  padding: 1rem;
+  background: var(--bg-card);
   border-radius: 0.5rem;
-  transition: transform 200ms;
+  padding: 1rem;
+  width: 300px;
+  transition: transform 0.2s;
 }
 
 article li:hover {
-  transform: scale(105%);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
-.filter {
+/* --- Parts Page --- */
+.search {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.search input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.search button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: linear-gradient(45deg, var(--accent-1), var(--accent-2));
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.search button:hover {
+  opacity: 0.85;
+}
+
+/* Filter Menu */
+.filter {
   position: relative;
-  z-index: 1;
 }
 
 .filterDropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
-  background-color: rgb(16, 16, 16);;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  background: var(--bg-card);
   border-radius: 0.5rem;
+  list-style: none;
+  min-width: 150px;
+  overflow: hidden;
 }
 
 .filterDropdown.show {
@@ -129,9 +162,9 @@ article li:hover {
 }
 
 .filterDropdown li {
-  padding: 6px 10px;
-  color: rgb(240, 240, 240);
+  padding: 0.5rem 1rem;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 .filterDropdown li:hover {
@@ -139,40 +172,87 @@ article li:hover {
 }
 
 .components {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    gap: 1rem;
-}
-
-.components img{
-    width: 256px;
-    height: 256px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  justify-items: center;
 }
 
 .componentCard {
-    background-color: rgb(16, 16, 16);;
-    color: rgb(240, 240, 240);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    transition: transform 200ms;
+  background: #101010;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 320px; /* keep cards consistent */
 }
 
 .componentCard:hover {
-    transform: scale(105%);
-    cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  cursor: pointer;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
+.componentCard img {
   width: 100%;
-  bottom: 0;
+  height: 220px;        /* fixed visual frame so the card composition keeps consistent framing */
+  object-fit: contain;  /* ensure entire box+card PNG is visible */
+  transition: transform 0.2s ease;
+}
+
+.componentCard:hover img {
+  transform: scale(1.03);
+}
+
+
+/* --- Footer --- */
+footer {
+  margin-top: auto;
   padding: 2rem;
-  background-image: linear-gradient(45deg, red, rgb(255, 0, 208));
+  text-align: center;
+  background: linear-gradient(45deg, var(--accent-1), var(--accent-2));
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  article li {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 5rem 1rem 3rem;
+  }
+
+  nav {
+    font-size: 0.9rem;
+  }
+
+  .components {
+    grid-template-columns: 1fr;
+  }
 }

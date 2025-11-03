@@ -1,29 +1,188 @@
 [
-    {
-        "type": "GPU",
-        "manufacturer": "NVIDIA",
-        "brand": "Gigbayte",
-        "price": "$1100",
-        "model": "RTX 4070 Ti Super OC",
-        "image": "images/nvidia-rtx-4070-ti-super-oc.png",
-        "tag": ["geforce", "rtx", "dlss", "raytracing", "nvidia", "gddr6x"]
-    },
-    {
-        "type": "GPU",
-        "manufacturer": "AMD",
-        "brand": "Gigabyte",
-        "price": "$750",
-        "model": "RX 7900 XT",
-        "image": "images/amd-rx-7900-xt.png",
-        "tag": ["radeon", "rx", "fidelityfx", "fsr", "amd", "gddr6"]
-    },
-    {
-        "type": "GPU",
-        "manufacturer": "INTEL",
-        "brand": "ASrock",
-        "price": "$250",
-        "model": "ARC B580 Challenger",
-        "image": "images/intel-arc-b580-challenger-oc.png",
-        "tag": ["arc", "intel", "xe", "raytracing"]
-    }
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$2,199",
+    "model": "RTX 4090 Aorus Master",
+    "image": "images/nvidia-rtx-4090-aorus-master.png",
+    "tag": ["geforce","rtx","4090","aorus","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$1,999",
+    "model": "RTX 4090 Gaming OC",
+    "image": "images/nvidia-rtx-4090-gaming-oc.png",
+    "tag": ["geforce","rtx","4090","gaming","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$1,899",
+    "model": "RTX 4090 Eagle OC",
+    "image": "images/nvidia-rtx-4090-eagle-oc.png",
+    "tag": ["geforce","rtx","4090","eagle","dlss","raytracing","nvidia","gddr6x"]
+  },
+
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$1,899",
+    "model": "RTX 4080 Aorus Master",
+    "image": "images/nvidia-rtx-4080-aorus-master.png",
+    "tag": ["geforce","rtx","4080","aorus","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$1,799",
+    "model": "RTX 4080 Gaming OC",
+    "image": "images/nvidia-rtx-4080-gaming-oc.png",
+    "tag": ["geforce","rtx","4080","gaming","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$1,749",
+    "model": "RTX 4080 Eagle OC",
+    "image": "images/nvidia-rtx-4080-eagle-oc.png",
+    "tag": ["geforce","rtx","4080","eagle","dlss","raytracing","nvidia","gddr6x"]
+  },
+
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$1,249",
+    "model": "RTX 4080 Super Gaming OC",
+    "image": "images/nvidia-rtx-4080-super-gaming-oc.png",
+    "tag": ["geforce","rtx","4080super","gaming","dlss","raytracing","nvidia","gddr6x"]
+  },
+
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$1,099",
+    "model": "RTX 4070 Ti Super Gaming OC",
+    "image": "images/nvidia-rtx-4070-ti-super-gaming-oc.png",
+    "tag": ["geforce","rtx","4070tisuper","gaming","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$899",
+    "model": "RTX 4070 Super Gaming OC",
+    "image": "images/nvidia-rtx-4070-super-gaming-oc.png",
+    "tag": ["geforce","rtx","4070super","gaming","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$829",
+    "model": "RTX 4070 Gaming OC",
+    "image": "images/nvidia-rtx-4070-gaming-oc.png",
+    "tag": ["geforce","rtx","4070","gaming","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$849",
+    "model": "RTX 4070 Eagle OC",
+    "image": "images/nvidia-rtx-4070-eagle-oc.png",
+    "tag": ["geforce","rtx","4070","eagle","dlss","raytracing","nvidia","gddr6x"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$949",
+    "model": "RTX 4070 Aorus Elite",
+    "image": "images/nvidia-rtx-4070-aorus-elite.png",
+    "tag": ["geforce","rtx","4070","aorus","dlss","raytracing","nvidia","gddr6x"]
+  },
+
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$599",
+    "model": "RTX 4060 Ti Gaming OC",
+    "image": "images/nvidia-rtx-4060-ti-gaming-oc.png",
+    "tag": ["geforce","rtx","4060ti","gaming","dlss","raytracing","nvidia","gddr6"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$499",
+    "model": "RTX 4060 Gaming OC",
+    "image": "images/nvidia-rtx-4060-gaming-oc.png",
+    "tag": ["geforce","rtx","4060","gaming","dlss","raytracing","nvidia","gddr6"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$459",
+    "model": "RTX 4060 Eagle OC",
+    "image": "images/nvidia-rtx-4060-eagle-oc.png",
+    "tag": ["geforce","rtx","4060","eagle","dlss","raytracing","nvidia","gddr6"]
+  },
+
+  {
+    "type": "GPU",
+    "manufacturer": "NVIDIA",
+    "brand": "Gigabyte",
+    "price": "$399",
+    "model": "RTX 4050 Gaming OC",
+    "image": "images/nvidia-rtx-4050-gaming-oc.png",
+    "tag": ["geforce","rtx","4050","gaming","dlss","raytracing","nvidia","gddr6"]
+  },
+
+  {
+    "type": "GPU",
+    "manufacturer": "INTEL",
+    "brand": "ASRock",
+    "price": "$249",
+    "model": "Arc A770 Challenger OC",
+    "image": "images/intel-arc-a770-challenger-oc.png",
+    "tag": ["arc","a770","intel","asrock","raytracing"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "INTEL",
+    "brand": "ASRock",
+    "price": "$199",
+    "model": "Arc A750 Challenger",
+    "image": "images/intel-arc-a750-challenger.png",
+    "tag": ["arc","a750","intel","asrock","raytracing"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "INTEL",
+    "brand": "ASRock",
+    "price": "$129",
+    "model": "Arc B580 Challenger",
+    "image": "images/intel-arc-b580-challenger.png",
+    "tag": ["arc","b580","intel","asrock"]
+  },
+  {
+    "type": "GPU",
+    "manufacturer": "INTEL",
+    "brand": "ASRock",
+    "price": "$99",
+    "model": "Arc A380 Challenger",
+    "image": "images/intel-arc-a380-challenger.png",
+    "tag": ["arc","a380","intel","asrock"]
+  }
 ]
