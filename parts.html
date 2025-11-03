@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="parts.html">Parts</a>
+    </nav>
+    <header>
+        <h1>Parts</h1>
+    </header>
+    <section class="parts">
+        <div class="search">
+            <h2>Search Component</h2>
+            <input type="text" placeholder="Search">
+            <button id="filterButton" onclick="toggleFilterMenu(event)">Filter</button>
+            <div class="filter">
+                <ul id="filterMenu" class="filterDropdown">
+                    <li data-type="ALL">ALL</li>
+                    <li data-type="MOTHERBOARD">Motherboard</li>
+                    <li data-type="CPU">CPU</li>
+                    <li data-type="GPU">GPU</li>
+                    <li data-type="RAM">RAM</li>
+                    <li data-type="SSD">SSD</li>
+                    <li data-type="PSU">PSU</li>
+                    <li data-type="AIR-COOLER">Air Cooler</li>
+                    <li data-type="AIO-COOLER">AIO Cooler</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Latest Parts</h2>
+        <p>Browse through some of the latest parts available from different manufacturers.</p>
+        <div id="components" class="components">
+            <!--Fetch JSON file for data-->
+        </div>
+    </section>
+    <aside></aside>
+    <footer>&copy 2025 Zain Ahmad</footer>
+    <script src="app.js"></script>
+</body>
+</html>

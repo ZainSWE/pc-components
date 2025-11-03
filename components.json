@@ -1,0 +1,29 @@
+[
+    {
+        "type": "GPU",
+        "manufacturer": "NVIDIA",
+        "brand": "Gigbayte",
+        "price": "$1100",
+        "model": "RTX 4070 Ti Super OC",
+        "image": "images/nvidia-rtx-4070-ti-super-oc.png",
+        "tag": ["geforce", "rtx", "dlss", "raytracing", "nvidia", "gddr6x"]
+    },
+    {
+        "type": "GPU",
+        "manufacturer": "AMD",
+        "brand": "Gigabyte",
+        "price": "$750",
+        "model": "RX 7900 XT",
+        "image": "images/amd-rx-7900-xt.png",
+        "tag": ["radeon", "rx", "fidelityfx", "fsr", "amd", "gddr6"]
+    },
+    {
+        "type": "GPU",
+        "manufacturer": "INTEL",
+        "brand": "ASrock",
+        "price": "$250",
+        "model": "ARC B580 Challenger",
+        "image": "images/intel-arc-b580-challenger-oc.png",
+        "tag": ["arc", "intel", "xe", "raytracing"]
+    }
+]
